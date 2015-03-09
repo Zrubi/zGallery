@@ -15,9 +15,7 @@
 <div id="site-description"><?php bloginfo( 'description' ); ?></div>
 </section>
 <nav id="menu" role="navigation">
-<div id="search">
-<?php get_search_form(); ?>
-</div>
+
 <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
 </nav>
 </header>

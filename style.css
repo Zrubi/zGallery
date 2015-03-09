@@ -4,7 +4,7 @@ Theme URI: https://github.com/Zrubi/zGallery/archive/master.zip
 Author: Zrubi
 Author URI: http://zrubi.hu
 Description: 
-Version: 0.1
+Version: 0.2
 License: GNU General Public License
 License URI: https://www.gnu.org/licenses/gpl.html
 Tags: dark, one-column, fluid-layout, responsive-layout, custom-menu, translation-ready
@@ -14,5 +14,199 @@ GitHub Theme URI: https://github.com/Zrubi/zGallery
 zGallery WordPress Theme © 2015 Zrubi.hu
 */
 
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{font-size:100%;font:inherit;padding:0;border:0;margin:0;vertical-align:baseline}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}.clear{clear:both}
-.sticky{}.bypostauthor{}.wp-caption{}.wp-caption-text{}.gallery-caption{}.alignright{}.alignleft{}.aligncenter{}
+
+/* Global setting */
+
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+  font-family: 'Veranda', sans-serif;
+  font-size:100%;
+  font:inherit;
+  padding:0;
+  border:0;
+  margin:0;
+  vertical-align:baseline
+}
+
+body {
+  line-height:1;
+  background: #202020;
+  color: #EEE;
+}
+
+ol,ul {
+  list-style:none
+}
+
+blockquote,q {
+  quotes:none
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+  content:'';
+  content:none
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+  display:block
+}
+
+.clear{clear:both}
+.sticky{}
+.bypostauthor{}
+.wp-caption{}
+.wp-caption-text{}
+.gallery-caption{}
+.alignright{}
+.alignleft{}
+.aligncenter{}
+
+
+
+/* Custom settings */
+#wrapper {
+  min-width: 800px;
+}
+
+#header {
+  background-color: transparent;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 800px;
+  height: 50px;
+  padding: 0;
+  margin-right: 0;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.header {
+  visibility: hidden;
+  height: 80px;
+}
+
+#site-title a {
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 40px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #EEE;
+}
+
+#site-description {
+  visibility: hidden;
+}
+
+#menu ul {
+  list-style: none;
+  background-color: rgba(0,0,0,0.6);
+  text-align: right;
+  padding: 0 40px;
+  margin-right: 0;
+}
+
+#menu li {
+  text-align: left;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    margin-right: 0;
+
+}
+
+#menu > ul > li {
+    text-align: center;
+  }
+
+#menu > ul > li > a {
+    padding-left: 0;
+  }
+
+
+#menu a {
+  text-decoration: none;
+  color: #EEE;
+  display: block;
+  padding-right: 25px;
+/*#  border-bottom: 1px solid red; */
+  transition: .9s background-color;
+}
+
+#menu a:hover {
+/*#  background-color: gray; */
+}
+
+#menu a.active {
+  background-color: #aaa;
+  color: #444;
+  cursor: default;
+}
+
+/* Sub Menus */
+#mennu li li {
+  font-size: .8em;
+}
+
+#menu li ul {
+    position: absolute;
+    display: none;
+    width: inherit;
+}
+
+#menu li:hover ul {
+    display: block;
+}
+
+#menu li ul li {
+    display: block;
+}
+
+
+#content {
+  margin: 0 6% 50px 6%;
+
+}
+
+#footer {
+  background-color: rgba(0,0,0,0.6);
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  bottom: 0;
+  line-height: 30px;
+  width: 100%;
+  min-width: 800px;
+  padding: 0;
+  margin-right: 0;
+  font-size: 12px;
+  color: gray;
+}
+
+
+#copyright {
+  display: block;
+  float:left;
+  margin: 0 40px;
+}
+
+#credits {
+  display: block;
+  float:right;
+  margin: 0 60px;
+}
+
+#credits a {
+  text-decoration: none;
+  color: gray;
+}
