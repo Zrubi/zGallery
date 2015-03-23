@@ -88,11 +88,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
   text-decoration: none;
 }
 
-.header {
-  visibility: hidden;
-  height: 80px;
-}
-
 #site-title a {
   float: left;
   height: 50px;
@@ -174,9 +169,21 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 
 
 #content {
-  margin: 0 6% 50px 6%;
+  margin: 80px 6% 50px 6%;
 
 }
+
+
+article > header {
+  margin-bottom: 20px;
+}
+
+
+
+.page-template-page_toplevel article > header {
+  visibility: hidden;
+}
+
 
 #footer {
   background-color: rgba(0,0,0,0.6);
