@@ -4,7 +4,7 @@ Theme URI: https://github.com/Zrubi/zGallery/archive/master.zip
 Author: Zrubi
 Author URI: http://zrubi.hu
 Description: 
-Version: 0.2
+Version: 1.0
 License: GNU General Public License
 License URI: https://www.gnu.org/licenses/gpl.html
 Tags: dark, one-column, fluid-layout, responsive-layout, custom-menu, translation-ready
@@ -33,6 +33,17 @@ body {
   background: #202020;
   color: #EEE;
 }
+
+body.home {
+  background: black;
+}
+
+a {
+  text-decoration: none;
+  color: #EEE;
+  outline: 0;
+}
+
 
 ol,ul {
   list-style:none
@@ -71,6 +82,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 /* Custom settings */
 #wrapper {
   min-width: 800px;
+  padding: 0 6%;
 }
 
 #header {
@@ -133,13 +145,11 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
   text-decoration: none;
   color: #EEE;
   display: block;
-  padding-right: 25px;
-/*#  border-bottom: 1px solid red; */
-  transition: .9s background-color;
+  padding: 0 15px;
 }
 
 #menu a:hover {
-/*#  background-color: gray; */
+    border-bottom: 3px solid gray;
 }
 
 #menu a.active {
@@ -147,6 +157,11 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
   color: #444;
   cursor: default;
 }
+
+.current-menu-item > a {
+  border-bottom: 2px solid #EEE;
+
+} 
 
 /* Sub Menus */
 #mennu li li {
@@ -169,7 +184,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 
 
 #content {
-  margin: 80px 6% 50px 6%;
+  margin: 80px auto 50px auto;
+  max-width: 1500px;
 
 }
 
@@ -217,3 +233,4 @@ article > header {
   text-decoration: none;
   color: gray;
 }
+
